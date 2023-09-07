@@ -33,6 +33,12 @@ namespace JokesApp.Controllers
             return View();
         }
 
+        // POST: Jokes/ShowSearchResults
+        public string ShowSearchResults(String searchPhrase)
+        {
+            return $"You entered {searchPhrase}";
+        }
+
         // GET: Jokes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
